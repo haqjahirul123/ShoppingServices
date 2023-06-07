@@ -9,7 +9,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AuthContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AuthContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("AZURE")));
 
 var app = builder.Build();
 
@@ -32,22 +32,22 @@ app.MapPost("/register", async (User user, AuthContext db) =>
 app.MapPost("/login", async (UserLogin userLogin, AuthContext db) =>
 {
 
-User? user = await db.Users.FirstOrDefaultAsync(user => user.email.Equals(userLogin.email) && user.password.Equals(userLogin.password));
+    User? user = await db.Users.FirstOrDefaultAsync(user => user.email.Equals(userLogin.email) && user.password.Equals(userLogin.password));
 
-if (user == null)
-{
-    return Results.NotFound("The username or password is not correct!");
-}
+    if (user == null)
+    {
+        return Results.NotFound("The username or password is not correct!");
+    }
 
-var secretkey = builder.Configuration["Jwt:Key"];
+    var secretkey = builder.Configuration["Jwt:Key"];
 
-if (secretkey == null)
-{
-    return Results.StatusCode(500);
-}
+    if (secretkey == null)
+    {
+        return Results.StatusCode(500);
+    }
 
-var claims = new[]
-{
+    var claims = new[]
+    {
         new Claim(ClaimTypes.NameIdentifier, user.id.ToString()),
         new Claim(ClaimTypes.Email, user.email),
         new Claim(ClaimTypes.GivenName, user.name),
@@ -55,19 +55,19 @@ var claims = new[]
         new Claim(ClaimTypes.Role, user.role)
     };
 
-var token = new JwtSecurityToken
-(
-    issuer: builder.Configuration["Jwt:Issuer"],
-    audience: builder.Configuration["Jwt:Audience"],
-    claims: claims,
-    expires: DateTime.UtcNow.AddMinutes(30),
-    notBefore: DateTime.UtcNow,
-    signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretkey)), SecurityAlgorithms.HmacSha256)
-);
+    var token = new JwtSecurityToken
+    (
+        issuer: builder.Configuration["Jwt:Issuer"],
+        audience: builder.Configuration["Jwt:Audience"],
+        claims: claims,
+        expires: DateTime.UtcNow.AddMinutes(30),
+        notBefore: DateTime.UtcNow,
+        signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretkey)), SecurityAlgorithms.HmacSha256)
+    );
 
-var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+    var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
 
-return Results.Ok(tokenString);
+    return Results.Ok(tokenString);
 
 
 });
