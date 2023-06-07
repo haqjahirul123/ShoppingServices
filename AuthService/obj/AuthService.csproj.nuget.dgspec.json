@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj": {}
+    "C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew\\AuthService\\AuthService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj": {
+    "C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew\\AuthService\\AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj",
+        "projectUniqueName": "C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew\\AuthService\\AuthService.csproj",
         "projectName": "AuthService",
-        "projectPath": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj",
+        "projectPath": "C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew\\AuthService\\AuthService.csproj",
         "packagesPath": "C:\\Users\\jahirul.haq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\obj\\",
+        "outputPath": "C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew\\AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jahirul.haq\\AppData\\Roaming\\NuGet\\NuGet.Config",

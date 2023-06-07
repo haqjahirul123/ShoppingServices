@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h3XoARTfr11Wv0kJBq+QsVpgT49JDWaaPWWNIFNQZ2nsPXqR2Jh/XO2Y9WDRgwfX2utKcnTP+DL4ucAKP4OTDg==",
+  "dgSpecHash": "M2xDU6lbk39uvUvRg4l2GrWemXEl+ZWM1rJjWxuSedEk28N9cGzR23Ak49GDZhwwR5YEnCJ8XuPgggOY78Co/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj",
+  "projectFilePath": "C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
