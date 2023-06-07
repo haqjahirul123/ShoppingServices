@@ -1,26 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahmadardal/Projects/ShoppingServices/AuthService/AuthService.csproj": {}
+    "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj": {}
   },
   "projects": {
-    "/Users/ahmadardal/Projects/ShoppingServices/AuthService/AuthService.csproj": {
+    "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahmadardal/Projects/ShoppingServices/AuthService/AuthService.csproj",
+        "projectUniqueName": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj",
         "projectName": "AuthService",
-        "projectPath": "/Users/ahmadardal/Projects/ShoppingServices/AuthService/AuthService.csproj",
-        "packagesPath": "/Users/ahmadardal/.nuget/packages/",
-        "outputPath": "/Users/ahmadardal/Projects/ShoppingServices/AuthService/obj/",
+        "projectPath": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\AuthService.csproj",
+        "packagesPath": "C:\\Users\\jahirul.haq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jahirul.haq\\Source\\Repos\\newSystemIntrigration\\ShoppingServices\\AuthService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahmadardal/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\jahirul.haq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "net7.0": {
@@ -68,6 +71,10 @@
               "target": "Package",
               "version": "[6.25.0, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.17.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -96,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
