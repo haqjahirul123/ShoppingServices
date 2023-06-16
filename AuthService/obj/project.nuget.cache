@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uvweMDtWqd203ZpETAIC7zWd5Jqfk7wFQ4nLnoMbxSlf3rBE0b93X/89SFFY3IabAb5lH+QEYqD3sa2vq2+4wA==",
+  "dgSpecHash": "TfU1cmfjk8CEnMX/UYX5iqRrJUTyfo2UxZrjud/s7yHfL5L3dHXLTer8zFpAi0a4ybGTLxo3NWVsziSq5YtMLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jahirul.haq\\source\\repos\\ShoppingServicesNew\\AuthService\\AuthService.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.0\\microsoft.entityframeworkcore.inmemory.7.0.0.nupkg.sha512",
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.0\\microsoft.entityframeworkcore.relational.7.0.0.nupkg.sha512",
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.0\\microsoft.entityframeworkcore.sqlserver.7.0.0.nupkg.sha512",
+    "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.5\\microsoft.entityframeworkcore.tools.6.0.5.nupkg.sha512",
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\jahirul.haq\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
