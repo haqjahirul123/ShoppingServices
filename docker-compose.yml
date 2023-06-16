@@ -9,7 +9,7 @@ services:
       - 3000:80
 
   inventoryservice:
-    image: haqjahirul1983/inventory
+    image: haqjahirul1983/inventoryservice
     restart: always
     ports:
       - 3001:80

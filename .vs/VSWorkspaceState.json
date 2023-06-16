@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AuthService",
+    "\\InventoryService",
+    "\\InventoryService\\Model",
+    "\\InventoryService\\Properties",
+    "\\PaymentService"
   ],
-  "SelectedNode": "\\C:\\Users\\jahirul.haq\\Source\\Repos\\ShoppingServicesNew",
+  "SelectedNode": "\\InventoryService",
   "PreviewInSolutionExplorer": false
 }
