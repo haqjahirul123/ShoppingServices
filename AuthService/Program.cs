@@ -9,7 +9,9 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AuthContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("AZURE")));
+//builder.Services.AddDbContext<AuthContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("AZURE")));
+
+builder.Services.AddDbContext<AuthContext>(opt => opt.UseSqlServer("DefaultConnection"));
 
 var app = builder.Build();
 

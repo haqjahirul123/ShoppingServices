@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<InventoryContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<InventoryContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("AZURE")));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
 {
@@ -49,9 +49,10 @@ app.MapGrpcService<ProductService>();
 
 // Detta API får endast användas av administratörer
 
-app.MapPost("/product", [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Administrator")] async (Product product, InventoryContext db) =>
+app.MapPost("/product", [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)] async (Product product, InventoryContext db) =>
 {
-
+    //Använder en http client för att kontakta inventoryservice
+    // http//inventory/product
     product.id = Guid.NewGuid();
 
     await db.Products.AddAsync(product);
