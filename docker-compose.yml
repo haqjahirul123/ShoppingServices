@@ -1,29 +1,18 @@
 version: "3.9"
 
 services:
+
   authservice:
-    build: ./AuthService
-    image: shoppingregistry.azurecr.io/authservice
+    image: haqjahirul1983/authservice
     restart: always
-    expose:
-      - 80
+    ports:
+      - 3000:80
 
   inventoryservice:
-    build: ./InventoryService
-    image: shoppingregistry.azurecr.io/inventoryservice
+    image: haqjahirul1983/inventory
     restart: always
-    expose:
-      - 80
-
-  paymentservice:
-    build: ./PaymentService
-    image: shoppingregistry.azurecr.io/paymentservice
-    restart: always
-    expose:
-      - 80
-
-  nginx:
-    image: nginx:latest
     ports:
-      - 80:80
-      - 443:443
+      - 3001:80
+      - 3005:123
+
+  

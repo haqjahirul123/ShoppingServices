@@ -1,9 +1,9 @@
-För att köra igång skiten, behöver du först bygga en docker-image för varje mikrotjänst.
+To get the crap going, you first need to build a docker image for each microservice.
 
-Så gör följande för att bygga docker-filerna:
+So do the following to build the docker files:
 
 cd InventoryService
-docker build . -t inventoryservice
+docker build . -t inventory service
 
 cd ../
 
@@ -13,16 +13,13 @@ docker build . -t authservice
 cd ../
 
 cd PaymentService
-docker build . -t paymentservice
+docker build . -t payment service
 
 cd ../
 
-// För Windows eller macOS Intel
+// For Windows or macOS Intel
 docker-compose -f deploy-win.yml up
 
-// För Apple Silicon
+// For Apple Silicon
 docker-compose -f deploy.yml up
 
-Förtydligande inför imorgon:
-
-Till imorn ska du gå igenom med dem hur de kan hosta denna docker-compose kluster på Azure, samt tillsätta en API Gateway.
